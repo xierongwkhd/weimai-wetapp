@@ -1,0 +1,61 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://mokespace.cn:3306/weipiao?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: mokespace.cn
+    port: 6379
+    timeout: 60s
+    password: a4460842622
+    database: 1
+    lettuce:
+      pool:
+        max-idle: 30
+        max-active: 8
+        max-wait: 10000
+        min-idle: 10
+  # 开启 multipart 上传功能
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB
+      max-request-size: 215MB
+      file-size-threshold: 2KB
+  # 配置es
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+      cluster-nodes: 119.3.223.200:9300
+file:
+  upload-dir: ./upFile
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    default-statement-timeout: 300
+
+mybatis-plus:
+  global-config:
+    db-column-underline: true
+    id-type: 0
+    field-strategy: 2
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com.moke.wp.wx_weipiao.mapper: debug
+    com.moke.wp.wx_weipiao.service: debug
+  pattern:
+    console: '%d{yyyy-MM-dd} [%thread] %-5level %logger{50} - %msg%n'
+
+
+#分页pageHelper
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
+

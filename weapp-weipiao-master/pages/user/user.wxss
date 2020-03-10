@@ -1,0 +1,154 @@
+.container {
+  background: #f3f3f3;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://mokespace.cn/kodexplorer/index.php?share/fileProxy&user=1&sid=IwiHsyK7');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 300rpx;
+  height: 300rpx;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header .avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 120rpx;
+  border: 3px solid #fff;
+  overflow: hidden;
+}
+
+.header .name {
+  height: 45rpx;
+  margin-top: 14rpx;
+  font-size: 32rpx;
+  line-height: 45rpx;
+  background: none;
+  color: #fff;
+}
+
+.header .name::after{
+  border: none
+}
+
+.order {
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 26rpx 30rpx 0;
+}
+
+.order .title-box {
+  position: relative;
+  width: 320rpx;
+  height: 42rpx;
+  margin: 0 auto;
+}
+
+.order .title {
+  position: relative;
+  height: 42rpx;
+  width: 160rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  line-height: 42rpx;
+  color: #333;
+  text-align: center;
+  background: #fff;
+  z-index: 9;
+}
+
+.order .title-line {
+  position: absolute;
+  width: 320rpx;
+  height: 1px;
+  left: 0;
+  top: 23rpx;
+  background: #f0f0f0;
+}
+
+.order-list {
+  display: flex;
+  height: 230rpx;
+  align-items: center;
+  background: #fff;
+}
+
+.order-item {
+  width: 50%;
+  text-align: center;
+}
+
+.order-item image {
+  width: 84rpx;
+  height: 84rpx;
+  margin-bottom: 6rpx;
+}
+
+.order-item view {
+  color: #333;
+  font-size: 28rpx;
+}
+
+.other {
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.other-item {
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  padding-right: 30rpx;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.other-item::after {
+  position: absolute;
+  right: 30rpx;
+  top: 50%;
+  content: "";
+  width: 16rpx;
+  height: 16rpx;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  transform: translateY(-50%) rotate(135deg);
+}
+/* 覆盖按钮的默认样式 */
+.other .btn{
+   width:100%;
+   border:none;
+   border-radius: 0;
+   padding:0;
+   margin:0;
+   font-size: 1em;
+   position: static;
+   line-height: normal;
+   color: #333;
+   text-align: left;
+   background: #fff;
+}
+.other .btn::after{
+  content: none;
+}
+.other .iconfont{
+  display: inline-block;
+  line-height: 100rpx;
+  margin-right: 8rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+.customer .iconfont{
+  font-size: 38rpx;
+}
+.about .iconfont{
+  opacity: 0.8;
+}

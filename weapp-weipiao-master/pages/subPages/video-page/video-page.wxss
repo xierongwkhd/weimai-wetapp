@@ -1,0 +1,123 @@
+.video-box {
+  width: 100%;
+  height: 420rpx;
+}
+
+#my-video {
+  width: 100%;
+  height: 420rpx;
+}
+
+.my-scroll {
+  height: calc(100vh - 420rpx);
+  width: 100%;
+}
+
+.movie-intro-desc {
+  position: relative;
+  padding: 30rpx;
+  border-bottom: 20rpx solid #f5f5f5;
+  color: #666;
+  font-size: 26rpx;
+}
+
+.name-box {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 38rpx;
+}
+
+.tag-box {
+  border: 0.02rem solid #b3b5b9;
+  border-radius: 4rpx;
+  box-sizing: border-box;
+  font-size: 20rpx;
+  margin-left: 4rpx;
+}
+
+.tag-d {
+  color: #fff;
+  padding: 0 4rpx;
+  background-color: #b3b5b9;
+}
+
+.tag-imax {
+  color: #b3b5b9;
+  padding: 0 4rpx;
+}
+
+.yellow {
+  color: #ffc600;
+  font-size: 32rpx;
+}
+
+.sc-box {
+  margin: 10rpx 0;
+}
+
+.buy-tickets {
+  position: absolute;
+  top: 50%;
+  right: 30rpx;
+  transform: translateY(-50%);
+}
+
+.play-title {
+  padding: 30rpx;
+  border: 1px solid #f5f5f5;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.video-item {
+  display: flex;
+  padding: 30rpx;
+  padding-left: 0;
+  margin-left: 30rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.img-box {
+  position: relative;
+  width: 220rpx;
+  height: 124rpx;
+}
+
+.img-box image {
+  width: 220rpx;
+  height: 124rpx;
+}
+
+.txt {
+  position: absolute;
+  left: 10rpx;
+  bottom: 10rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.video-name {
+  /* 多行文字溢出打省略号 */
+  flex: 1;
+  margin-left: 30rpx;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.red {
+  color: #47a86c;
+}
+
+/* 隐藏滚动条 */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

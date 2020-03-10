@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b04c643-29ac-45f3-a401-1fefcc236dd7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Tag Library Descriptor" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/JavaRe/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\JavaRe\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XC3zimu2Vm4K58iUTHgBbjmDtN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\idea-workspace\weipiao\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.moke.wp.wx_weipiao.config.es" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.moke.wp.wx_weipiao.mapper" />
+      <recent name="com.moke.wp.wx_weipiao.service" />
+      <recent name="com.moke.wp.wx_weipiao.entity.Vo" />
+      <recent name="com.moke.wp.wx_weipiao.config.exception" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.WxWeipiaoApplication">
+    <configuration name="WxWeipiaoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weipiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moke.wp.wx_weipiao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.moke.wp.wx_weipiao" />
+      <option name="MAIN_CLASS_NAME" value="com.moke.wp.wx_weipiao.WxWeipiaoApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WxWeipiaoApplicationTests.insertSeat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weipiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moke.wp.wx_weipiao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.moke.wp.wx_weipiao" />
+      <option name="MAIN_CLASS_NAME" value="com.moke.wp.wx_weipiao.WxWeipiaoApplicationTests" />
+      <option name="METHOD_NAME" value="insertSeat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weipiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moke.wp.wx_weipiao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.moke.wp.wx_weipiao" />
+      <option name="MAIN_CLASS_NAME" value="com.moke.wp.wx_weipiao.generator" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generator.mgbtest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weipiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moke.wp.wx_weipiao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.moke.wp.wx_weipiao" />
+      <option name="MAIN_CLASS_NAME" value="com.moke.wp.wx_weipiao.generator" />
+      <option name="METHOD_NAME" value="mgbtest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WxWeipiaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="weipiao" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.moke.wp.wx_weipiao.WxWeipiaoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.generator.mgbtest" />
+        <item itemvalue="JUnit.WxWeipiaoApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.WxWeipiaoApplicationTests.insertSeat" />
+        <item itemvalue="JUnit.generator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b04c643-29ac-45f3-a401-1fefcc236dd7" name="Default Changelist" comment="" />
+      <created>1580536513494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580536513494</updated>
+      <workItem from="1580536517635" duration="233000" />
+      <workItem from="1580536769635" duration="27000" />
+      <workItem from="1580536956730" duration="136000" />
+      <workItem from="1580537113642" duration="11997000" />
+      <workItem from="1580621688359" duration="12033000" />
+      <workItem from="1580635295632" duration="9504000" />
+      <workItem from="1580648024212" duration="232000" />
+      <workItem from="1580698734554" duration="12953000" />
+      <workItem from="1580793270698" duration="9370000" />
+      <workItem from="1580872269813" duration="14180000" />
+      <workItem from="1580895194498" duration="1028000" />
+      <workItem from="1580897110819" duration="3745000" />
+      <workItem from="1580958844818" duration="20370000" />
+      <workItem from="1580992279465" duration="786000" />
+      <workItem from="1581044194706" duration="13045000" />
+      <workItem from="1581077971312" duration="402000" />
+      <workItem from="1581141931197" duration="1341000" />
+      <workItem from="1581216115246" duration="11670000" />
+      <workItem from="1581308846551" duration="13511000" />
+      <workItem from="1581398836206" duration="11794000" />
+      <workItem from="1581485761798" duration="16657000" />
+      <workItem from="1581511048866" duration="180000" />
+      <workItem from="1581570876774" duration="17369000" />
+      <workItem from="1581655212225" duration="7418000" />
+      <workItem from="1581696040530" duration="35000" />
+      <workItem from="1581747046461" duration="14822000" />
+      <workItem from="1581830663024" duration="13295000" />
+      <workItem from="1581922010538" duration="2914000" />
+      <workItem from="1581935041181" duration="245000" />
+      <workItem from="1581935440315" duration="524000" />
+      <workItem from="1582005766836" duration="11265000" />
+      <workItem from="1582021106398" duration="1184000" />
+      <workItem from="1582082912108" duration="7000" />
+      <workItem from="1582090230205" duration="16429000" />
+      <workItem from="1582177354101" duration="17184000" />
+      <workItem from="1582212543788" duration="190000" />
+      <workItem from="1582254750308" duration="11486000" />
+      <workItem from="1582350479711" duration="12321000" />
+      <workItem from="1582438850737" duration="12167000" />
+      <workItem from="1582524233405" duration="10369000" />
+      <workItem from="1582607962797" duration="11566000" />
+      <workItem from="1582624255089" duration="1194000" />
+      <workItem from="1582625912272" duration="259000" />
+      <workItem from="1582626283708" duration="1571000" />
+      <workItem from="1582781903178" duration="1507000" />
+      <workItem from="1582785672460" duration="5592000" />
+      <workItem from="1582798773586" duration="414000" />
+      <workItem from="1582799540737" duration="1432000" />
+      <workItem from="1582868807993" duration="11657000" />
+      <workItem from="1582890788889" duration="343000" />
+      <workItem from="1582957415333" duration="4864000" />
+      <workItem from="1582969085286" duration="2817000" />
+      <workItem from="1582976334347" duration="788000" />
+      <workItem from="1582977157328" duration="195000" />
+      <workItem from="1583030378805" duration="23882000" />
+      <workItem from="1583122132385" duration="1347000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#Notifications" timestamp="1582267673488">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1582267673488" />
+    <state x="499" y="171" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1581498591076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="171" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581498591076" />
+    <state x="527" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581412336796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="527" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1581412336796" />
+    <state x="574" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1583053955451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583053955451" />
+    <state x="499" y="193" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1582353687667">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="193" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1582353687667" />
+    <state x="527" y="279" width="481" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580633871765">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="527" y="279" width="481" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1580633871765" />
+    <state x="385" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581416162220">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="385" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1581416162220" />
+    <state width="1493" height="206" key="GridCell.Tab.0.bottom" timestamp="1583127407160">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="206" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583127407160" />
+    <state width="1493" height="206" key="GridCell.Tab.0.center" timestamp="1583127407160">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="206" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583127407160" />
+    <state width="1493" height="206" key="GridCell.Tab.0.left" timestamp="1583127407160">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="206" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583127407160" />
+    <state width="1493" height="206" key="GridCell.Tab.0.right" timestamp="1583127407160">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="206" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583127407160" />
+    <state width="1493" height="194" key="GridCell.Tab.1.bottom" timestamp="1583127407144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583127407144" />
+    <state width="1493" height="194" key="GridCell.Tab.1.center" timestamp="1583127407144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583127407144" />
+    <state width="1493" height="194" key="GridCell.Tab.1.left" timestamp="1583127407144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583127407144" />
+    <state width="1493" height="194" key="GridCell.Tab.1.right" timestamp="1583127407144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583127407144" />
+    <state width="1493" height="194" key="GridCell.Tab.2.bottom" timestamp="1583127407144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583127407144" />
+    <state width="1493" height="194" key="GridCell.Tab.2.center" timestamp="1583127407144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1583127407144" />
+    <state width="1493" height="194" key="GridCell.Tab.2.left" timestamp="1583127407144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1583127407144" />
+    <state width="1493" height="194" key="GridCell.Tab.2.right" timestamp="1583127407144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1583127407144" />
+    <state x="299" y="71" key="Maven.ArtifactSearchDialog" timestamp="1583033207456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="71" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1583033207456" />
+    <state x="349" y="78" key="Registry" timestamp="1582255451384">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="78" key="Registry/0.0.1536.824@0.0.1536.824" timestamp="1582255451384" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1582255331198">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582255331198" />
+    <state x="499" y="183" key="extract.method.dialog" timestamp="1580802128420">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="183" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1580802128420" />
+    <state x="457" y="44" width="621" height="735" key="find.popup" timestamp="1580633978963">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="457" y="44" width="621" height="735" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1580633978963" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1582966786756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582966786756" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582870002260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582870002260" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moke/wp/wx_weipiao/controller/admin/Admin_MovieController.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moke/wp/wx_weipiao/controller/admin/Admin_DaysAndTimesController.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moke/wp/wx_weipiao/service/DaysService.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((HashMap.Node)((com.alibaba.fastjson.JSONObject)((HashMap.Node)object.entrySet().toArray()[0]).getValue()).entrySet().toArray()[0]).getValue()" custom="com.alibaba.fastjson.JSONObject,java.util.HashMap.Node" />
+        <watch expression="map.entrySet().toArray()[5]" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

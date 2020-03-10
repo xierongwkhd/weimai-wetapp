@@ -1,0 +1,27 @@
+<template name="filmList">
+    <view class="film">
+        <block wx:for="{{films}}" wx:for-index="filmIndex" wx:for-item="filmItem" wx:key="film">
+            <view data-id="{{filmItem.subject.id}}" class="film-item" catchtap="viewFilmDetail">
+                <view class="film-cover">
+                    <image src="{{filmItem.subject.images.large}}" class="film-cover-img"></image>
+                    <view class="film-rating">
+                        <block wx:if="{{filmItem.subject.rating.average == 0}}">
+                            暂无评分
+                        </block>
+                        <block wx:else>
+                            {{filmItem.subject.rating.average}}分
+                        </block>
+                    </view>
+                </view>
+                <view class="file-intro">
+                    <view class="film-title">{{filmItem.subject.title}}</view>
+                    <view class="film-tag">
+                        <view class="film-tag-item" wx:for="{{filmItem.subject.genres}}" wx:for-item="filmTagItem" wx:key="filmTag">
+                            {{filmTagItem}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</template>

@@ -1,0 +1,19 @@
+<import src='../../../templates/commentSection/commentSection.wxml' />
+<import src='../../../templates/loadingMore/loadingMore.wxml' />
+<view>
+  <view class='hot' wx:if='{{hcmts.length}}'>
+    <view class='comment-title'>热门评论</view>
+    <view>
+      <template is='commentSection' wx:for='{{hcmts}}' wx:key='id' wx:for-item='comment' data='{{comment}}'></template>
+    </view>
+  </view>
+  <view class='hot' wx:if='{{cmts.length}}'>
+    <view class='comment-title'>最新评论</view>
+    <view>
+      <template is='commentSection' wx:for='{{cmts}}' wx:key='{{comment.id}}' wx:for-item='comment' data='{{comment}}'></template>    
+    </view>
+  </view>
+  <view wx:if="{{cmts.length && hasMore}}">
+    <template is="loadingMore" />
+  </view>
+</view>

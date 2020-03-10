@@ -1,0 +1,2 @@
+@import "/components/filmList/filmList.wxss";
+@import "/components/message/message.wxss";

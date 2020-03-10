@@ -1,0 +1,44 @@
+<import src='../../../templates/loadingMore/loadingMore.wxml' />
+<import src='../../../templates/nothing/nothing.wxml' />
+
+<view class='container' style='position:{{isShow?"fixed":""}}'>
+  <view class='top'>
+    <view>
+      <select-time start-time='{{showTime}}' bindselectDayEvent='changeTime'></select-time>
+    </view>
+    <view>
+      <filter-nav city-cinema-info='{{cityCinemaInfo}}' bindchange='changeCondition' bindtoggleShow='toggleShow' hidden='{{!isShow}}'></filter-nav>
+    </view>
+  </view>
+  <view class='main-content'>
+    <view class='cinema-list'>
+      <block wx:for-items="{{cinemas}}">
+        <navigator url='/pages/subPages/cinema-detail/cinema-detail?cinemaId={{item.cinema.id}}&movieId={{params.movieId}}&day={{params.dateTime}}' hover-class="none">
+          <view class="flex item">
+            <view class="flex_auto item_left">
+              <view><text class="title">{{item.cinema.nm}}</text></view>
+              <view><text class="sub_title">{{item.cinema.addr}}</text></view>
+              <view class="tag">
+                <text wx:if="{{item.cinema.endorse}}">改签</text>
+                <text wx:if="{{item.cinema.allowrefund}}">退票</text>
+                <text wx:for="{{item.hallTypeList}}" wx:key="id">{{item.halltype}}</text>
+              </view>
+            </view>
+            <view class="item_right" wx:if="{{item.cinema.distance}}">
+              <view><text class="price">{{item.cinema.distance}}km</text></view>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+    <view wx:if='{{cinemas.length>0 && hasMore}}'>
+      <template is="loadingMore" />
+    </view>
+    <view hidden='{{!nothing }}'>
+      <template is='nothing' data='{{message:"暂无符合条件的影院"}}' />
+    </view>
+    <view hidden='{{!noSchedule}}'>
+      <template is='nothing' data='{{message:"当天暂无场次"}}' />
+    </view>
+  </view>
+</view>
