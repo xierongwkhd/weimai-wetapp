@@ -17,7 +17,7 @@ public interface Constant {
     // 你的appid
     public static final String WX_LOGIN_APPID = "wxb367811c1b81b819";
     // 你的密匙
-    public static final String WX_LOGIN_SECRET = "bd42568e3d7337a3328c952f3c01635f";
+    public static final String WX_LOGIN_SECRET = "db157111469add32869b93d4aec1b560";
     // 固定参数
     public static final String WX_LOGIN_GRANT_TYPE = "authorization_code";
 
@@ -34,5 +34,13 @@ public interface Constant {
     public static final String QQ_MAP_DISTRICT = "https://apis.map.qq.com/ws/district/v1/getchildren";
     //地址转坐标
     public static final String QQ_MAP_TO = "https://apis.map.qq.com/ws/geocoder/v1/";
+
+    /*
+    *  图灵机器人
+     */
+    //api
+    public static final String REBOOT_URL = "http://openapi.tuling123.com/openapi/api/v2";
+    //apikey
+    public static final String REBOOT_KEY = "469f6180d21646f8b99bd96797c11ece";
 
 }

@@ -1,6 +1,13 @@
 package com.moke.wp.wx_weipiao.entity;
 
-public class AdminUser {
+import com.baomidou.mybatisplus.activerecord.Model;
+import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableName;
+
+import java.io.Serializable;
+
+@TableName("t_admin_user")
+public class AdminUser extends Model<AdminUser> {
     private Integer id;
 
     private String avatar;
@@ -12,6 +19,28 @@ public class AdminUser {
     private String password;
 
     private Integer cineamId;
+
+    @TableField(exist = false)
+    private String cinemaNm;
+
+    @TableField(exist = false)
+    private Integer roleId;
+
+    public Integer getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Integer roleId) {
+        this.roleId = roleId;
+    }
+
+    public String getCinemaNm() {
+        return cinemaNm;
+    }
+
+    public void setCinemaNm(String cinemaNm) {
+        this.cinemaNm = cinemaNm;
+    }
 
     public Integer getId() {
         return id;
@@ -59,5 +88,10 @@ public class AdminUser {
 
     public void setCineamId(Integer cineamId) {
         this.cineamId = cineamId;
+    }
+
+    @Override
+    protected Serializable pkVal() {
+        return null;
     }
 }

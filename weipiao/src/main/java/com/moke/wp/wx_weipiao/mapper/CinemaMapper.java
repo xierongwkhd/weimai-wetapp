@@ -13,7 +13,9 @@ import java.util.List;
 public interface CinemaMapper extends BaseMapper<Cinema> {
 
     @Select("<script>" +
-            "SELECT *,(round(6367000 * 2 * asin(sqrt(pow(sin(((latitude * pi()) / 180 - (#{lat} * pi()) / 180) / 2), 2) + cos((#{lat} * pi()) / 180) * cos((latitude * pi()) / 180) * pow(sin(((longitude * pi()) / 180 - (#{lng} * pi()) / 180) / 2), 2))))) AS distance " +
+            "SELECT *,(round(6367000 * 2 * asin(sqrt(pow(sin(((latitude * pi()) / 180 - (#{lat} * pi()) / 180) / 2), 2) " +
+            "+ cos((#{lat} * pi()) / 180) * cos((latitude * pi()) / 180) * pow(sin(((longitude * pi()) / 180 " +
+            "- (#{lng} * pi()) / 180) / 2), 2))))) AS distance " +
             "FROM `t_cinema` where addr like '%${adrr}%' " +
             "<if test='selectRegion != null'>"+
             "and addr like '%${selectRegion}%' " +

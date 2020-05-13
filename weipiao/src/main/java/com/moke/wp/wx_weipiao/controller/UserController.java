@@ -58,8 +58,6 @@ public class UserController {
 
         // 封装返回小程序
         Map<String, String> result = new HashMap<>();
-//        result.put("session_key", session_key);
-//        result.put("open_id", open_id);
         result.put("token",subject.getSession().getId().toString());
 
         return new Result(result);

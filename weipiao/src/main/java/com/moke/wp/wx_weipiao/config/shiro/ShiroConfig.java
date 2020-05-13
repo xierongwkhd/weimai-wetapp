@@ -106,6 +106,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/user/wxLogin", "anon");
         filterChainDefinitionMap.put("/admin/*","authc");
         filterChainDefinitionMap.put("/admin/user/login","anon");
+        filterChainDefinitionMap.put("/ai","anon");
 
         filterChainDefinitionMap.put("/home/updateWish","authc");
         filterChainDefinitionMap.put("/home/getIsWish","authc");
