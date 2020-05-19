@@ -1,0 +1,46 @@
+<view wx:if='{{info && current !==-1}}'>
+  <view class='video-box'>
+    <!-- video是原生组件，有很多限制，如不能设置position: fixed；设置其父元素position也不行，所以下面用scroll-view。 -->
+    <video wx:key='{{current}}' id='my-video' src='{{videoList[current].videourl}}' autoplay bindended='endHandle' binderror='errorHandle'></video>
+  </view>
+  <scroll-view class='my-scroll' scroll-y>
+    <view class='movie-intro-desc'>
+      <view class='name-box'>
+        <view class='name'>{{info.movieName}}</view>
+        <view class='tag-box' wx:if='{{info.version}}'>
+          <text class='tag-d'>{{info.version[0]}}</text>
+          <text wx:if='{{info.version[1]}}' class='tag-imax'>{{info.version[1]}}</text>
+        </view>
+      </view>
+      <view class='sc-box'>
+        <view wx:if='{{info.globalReleased}}' class=''>
+          <view wx:if='{{info.sc}}'>评分
+            <text class='yellow'>{{info.sc}}</text>
+          </view>
+          <view wx:else>暂无评分</view>
+        </view>
+        <view wx:else>
+          <text class='yellow'>{{info.wish}}</text>人想看</view>
+      </view>
+      <view class='release'>{{info.release}} {{info.rt}}</view>
+      <view class='buy-tickets'>
+        <view wx:if='{{info.showst===3}}' class='btn' bindtap='goTo'>购票</view>
+        <view wx:elif='{{info.showst===1}}' class="btn {{isWish?'want-see':''}}" bindtap="wantToWatch">
+          <text wx:if="{{isWish}}">已想看</text>
+          <text wx:else>想看</text>
+        </view>
+        <view wx:elif='{{info.showst===2}}' class='btn pre-sale' bindtap='goTo'>预售</view>
+      </view>
+    </view>
+    <view class='list-box' wx:if='{{videoList.length}}'>
+      <view class='play-title'>播放列表 （{{videoList.length}}）</view>
+      <view wx:for='{{videoList}}' wx:key='{{item}}' class='video-item' bindtap='selectItem' data-index='{{index}}'>
+        <view class='img-box'>
+          <image src='{{item.videoImg}}' mode='aspectFill'></image>
+          <view class='txt' wx:if='{{current===index}}'>播放中</view>
+        </view>
+        <view class='video-name {{current === index ?"red":""}}'>{{item.videoName}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

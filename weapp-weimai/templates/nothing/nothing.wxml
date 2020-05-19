@@ -1,0 +1,6 @@
+<template name="nothing">
+  <view class='nothing'>
+    <image src='../../../image/user/nothing.png' class='nothing-img'></image>
+    <view class='nothing-text'>{{message}}</view>
+  </view>
+</template>

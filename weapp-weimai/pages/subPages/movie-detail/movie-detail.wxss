@@ -1,0 +1,263 @@
+@import '/templates/commentSection/commentSection.wxss';
+.movie-header {
+  position: relative;
+  height: 450rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+  filter: blur(0);
+  overflow: hidden;
+}
+
+.movie-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(30rpx);
+  z-index: -1;
+}
+
+.movie-mask {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #40454e;
+  opacity: 0.55;
+}
+
+.movie-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+  color: #fff;
+}
+
+.two-button{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  margin-top: 30rpx;
+}
+
+.wish-button{
+  margin-left: 5rpx;
+  font-size: 20rpx;
+  width: 310rpx;
+  height: 50rpx;
+  background-color: rgba(255,255,255,0.3);
+  color: #fff;
+}
+
+.isComment {
+  margin-left: 5rpx;
+  font-size: 20rpx;
+  width: 310rpx;
+  height: 50rpx;
+  background-color: rgba(255,255,255,0.3);
+  color: #ffc600;
+}
+
+.isWish {
+  color: #47a86c;
+}
+
+.wish-button-hover{
+  margin-left: 5rpx;
+  font-size: 20rpx;
+  width: 310rpx;
+  height: 50rpx;
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.movie-poster {
+  width: 214rpx;
+  height: 300rpx;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px #f0f2f3;
+}
+
+.movie-info {
+  height: 300rpx;
+  width: 60%;
+  margin-left: 30rpx;
+  padding-top: 10rpx;
+  font-size: 22rpx;
+  color: #e5e5e5;
+}
+
+.movie-name {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #fff;
+}
+
+.movie-ename {
+  color: #fff;
+  margin-bottom: 12rpx;
+}
+
+.movie-score {
+  color: #ffc600;
+  font-size: 36rpx;
+}
+
+.movie-star {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 6rpx;
+}
+
+.score-num {
+  font-size: 20rpx;
+}
+
+.no-score {
+  font-size: 32rpx;
+}
+
+.movie-category {
+  display: flex;
+  align-items: center;
+  margin-top: 12rpx;
+}
+
+.tag-box {
+  color: #fff;
+  border: 0.02rem solid rgba(255, 255, 255, 0.4);
+  border-radius: 4rpx;
+  box-sizing: border-box;
+  font-size: 20rpx;
+  margin-left: 4rpx;
+}
+
+.tag-d {
+  padding: 0 4rpx;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.tag-imax {
+  padding: 0 4rpx;
+}
+
+.movie-body {
+  margin-bottom: 110rpx;
+}
+
+.section {
+  padding-bottom: 20rpx;
+  border-bottom: 20rpx solid #f5f5f5;
+  color: #555;
+  background-color: #fff;
+}
+
+.section-title {
+  padding: 20rpx 30rpx 10rpx;
+  font-size: 32rpx;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.synopsis {
+  padding: 0 30rpx;
+  line-height: 1.42;
+  font-size: 30rpx;
+  overflow: hidden;
+}
+
+.icon-jiantouarrow483 {
+  height: 44rpx;
+  color: #aaa;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 44rpx;
+}
+
+.unfold {
+  transform: rotate(180deg);
+}
+
+.scroll-view_H {
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+
+.videoImg-box {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-zanting {
+  position: absolute;
+  bottom: 15rpx;
+  right: 20rpx;
+  font-size: 40rpx;
+  opacity: 0.7;
+  color: #fff;
+}
+
+.videoImg {
+  width: 330rpx;
+  height: 180rpx;
+  margin-right: 10rpx;
+}
+
+.photo {
+  width: 240rpx;
+  height: 180rpx;
+  margin-left: 10rpx;
+}
+
+.purchase {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #47a86c;
+  color: #fff;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.writeComm {
+  display: inline-block;
+  background: none !important;
+  color: #47a86c;
+  height: 50rpx;
+  font-size: 32rpx;
+  line-height: 50rpx;
+  margin-right: 0rpx;
+}
+
+.writeComm::after{
+  border: none
+}
+
+.comment {
+  padding: 20rpx 30rpx;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.total{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #47a86c;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+

@@ -1,0 +1,66 @@
+.commentSection {
+  display: flex;
+  padding: 30rpx 0 0 30rpx;
+  color: #555;
+}
+
+.avatar {
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+}
+
+.left {
+  flex-grow: 1;
+  margin-left: 40rpx;
+  padding-right: 30rpx; 
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 30rpx;
+}
+.commentSection:last-child .left{
+  border: none;
+}
+
+.nickName {
+  font-size: 24rpx;
+  color: #444;
+}
+
+.buy {
+  display: inline-block;
+  border-radius: 2px;
+  color: #fff;
+  background: #f90;
+  font-size: 22rpx;
+  margin-left: 5px;
+  padding: 1px 2px;
+}
+
+
+.commentSection .movie-star {
+  width: 22rpx;
+  height: 22rpx;
+  margin-right: 3px;
+}
+
+.content {
+  font-size: 30rpx;
+  margin: 20rpx 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #999;
+}
+.comment-time{
+  font-size: 24rpx;
+}
+.approve1{
+  font-size: 24rpx;
+  color: rgb(214, 70, 70);
+}
+.approve2{
+  font-size: 24rpx;
+}

@@ -1,0 +1,46 @@
+<import src='../../../templates/nothing/nothing.wxml' />
+<import src='../../../templates/cinemaSection/cinemaSection.wxml' />
+
+<view class='search-wrapper'>
+  <view class='search-header topbar'>
+    <input class='search-input' placeholder-class='phcolor' placeholder='{{placeholder}}' bindconfirm='search'></input>
+    <text class='iconfont icon-sousuo'></text>
+    <view class='cancel' bindtap='goBack'>取消</view>
+  </view>
+
+  <view class='result-list'>
+    <view wx:if="{{history.length!==0}}" class='options' style="margin-top: 98rpx;">
+      <text>历史搜索记录</text>
+      <text bindtap='clearHistory'>清空</text>
+    </view>
+    <view class='options'>
+    <!-- 遍历 history 数组 -->
+      <text class='item' wx:for='{{history}}' data-index='{{index}}' bindtap='search'>{{item}}</text>
+    </view>
+    <view wx:if='{{movies.length}}' class='movie-box'>
+      <view class='title'>电影</view>
+      <navigator wx:for='{{movies}}' wx:for-item='movie' wx:key='{{movie.id}}' class='movie-section' url='/pages/subPages/movie-detail/movie-detail?movieId={{movie.id}}'>
+        <image class='movie-img' src='{{movie.img}}'></image>
+        <view class='movie-info'>
+          <view class='movie-name line-ellipsis'>{{movie.nm}}
+            <text class='version {{movie.version}}'></text>
+          </view>
+          <view class='line-ellipsis'>{{movie.enm}}</view>
+          <view class='line-ellipsis'>{{movie.cat}}</view>
+          <view class='line-ellipsis'>{{movie.rt}}</view>
+        </view>
+        <view class='score'>
+          <text class='grade' wx:if='{{movie.sc}}'>{{movie.sc}}分</text>
+          <text wx:else>暂无评分</text>
+        </view>
+      </navigator>
+    </view>
+    <view wx:if='{{cinemas.length}}'>
+      <view class='title'>影院</view>
+      <template is="cinemaSection" wx:for='{{cinemas}}' wx:for-item='cinema' wx:key='{{cinema.id}}' data='{{cinema}}' />
+    </view>
+  </view>
+  <view hidden='{{movies.length || cinemas.length || !value}}'>
+    <template is='nothing' data='{{message:"没有找到相关内容"}}' />
+  </view>
+</view>

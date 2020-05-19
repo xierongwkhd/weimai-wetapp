@@ -1,0 +1,37 @@
+.container{
+  position: relative;  
+  width: 100vw;
+  height: 100vh;
+}
+.map{
+  width: 100%;
+  height: 85%;
+}
+.pos{
+  position: absolute;
+  right: 30rpx;
+  bottom: 17%;
+  width: 100rpx;
+  height: 100rpx;
+}
+.cinema-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 15%;
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.cinema-name{
+  font-size: 38rpx;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.cinema-position{
+  font-size: 30rpx;
+  color: #999;
+  line-height: 1.5;
+}

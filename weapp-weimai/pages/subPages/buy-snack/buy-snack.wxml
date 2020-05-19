@@ -1,0 +1,24 @@
+<view class='container' wx:if='{{order}}'>
+  <view class='section'>
+    <view class='snack-box box'>
+      <view class='snack line-ellipsis'>{{order.title}}</view>
+      <view>{{order.price}}元</view>
+    </view>
+    <view class='amount-box box'>
+      <view>数量：</view>
+      <view class='stepper'>
+        <view class='{{order.amount>1?"red":""}}' bindtap='minus'>-</view>
+        <view class='num'>{{order.amount}}</view>
+        <view class='red' bindtap='plus'>+</view>
+      </view>
+    </view>
+    <view class='total box'>
+      <view>总价：</view>
+      <view class='red'>{{order.total}}元</view>
+    </view>
+  </view>
+  <!-- <view class='phone section'>
+    手机号 187××××2533
+  </view> -->
+  <view class='payment-btn' bindtap='payment'>确认支付</view>
+</view>

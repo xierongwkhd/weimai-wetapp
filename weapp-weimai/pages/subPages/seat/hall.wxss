@@ -1,0 +1,199 @@
+/* pages/hall/hall.wxss-xzh */
+page{
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleContainer {
+  /* margin-top: 20rpx; */
+  display: flex;
+  flex-direction: column;
+}
+
+.titleMovie {
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.titleText {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 25rpx;
+}
+
+.iconArrange {
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.seatIcon {
+  display: flex;
+  flex-direction: column;
+}
+
+.seatIcon image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.seatIcon text {
+  font-size: 20rpx;
+}
+
+.line {
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 5rpx;
+  background: #ebebeb;
+}
+
+.image-group {
+  display: flex;
+  white-space: nowrap;
+  margin-top: 10rpx;
+}
+
+.text {
+  opacity: 0.5;
+  margin: 2rpx;
+  text-align: center;
+  width: 60rpx;
+  font-size: auto;
+}
+
+.movable-area {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: #f7f7f7;
+}
+
+.movable-view {
+  height: 20%;
+  width: 20%;
+  top: 300rpx;
+  left: 350rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.seatView {
+  /* opacity: 0.5; */
+}
+
+.img {
+  margin: 5rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.imgSelect {
+  margin: 5rpx;
+  height: 60rpx;
+  width: 60rpx;
+  background: #47a86c;
+}
+
+.downContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin-left: 200rpx; */
+}
+
+.x {
+  display: flex;
+  flex-direction: row;
+}
+
+.y {
+  display: flex;
+  flex-direction: column;
+}
+
+.hallTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 250rpx; 
+  width: 460rpx;
+  background: #e2e2e2;
+  border-bottom-left-radius: 90rpx;
+  border-bottom-right-radius: 90rpx;
+}
+
+.hallTitle text {
+  padding: 10rpx;
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  background: linear-gradient(to right, #55d185, #47a86c);
+}
+
+.submit text {
+  color: #fff;
+  font-size: 35rpx;
+}
+
+.ticketCount {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 100rpx;
+}
+
+.ticketCount button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  margin: 10rpx;
+  margin-left: 40rpx;
+  color: #666;
+}
+
+.ticketCount image {
+  margin-left: 15rpx;
+  height: 20rpx;
+  width: 20rpx;
+}

@@ -1,0 +1,9 @@
+<view class='container'>
+  <map id='map' class='map' longitude='{{cinemaData.longitude}}' latitude='{{cinemaData.latitude}}' show-location markers='{{markers}}'></map>
+  <!-- 原生组件的层级是最高的，所以页面中的其他组件无论设置 z-index 为多少，都无法盖在原生组件上，所以只能用cover-image -->
+  <cover-image src='/image/user/pos.png' class='pos' bindtap='position'></cover-image>
+  <view class='cinema-box'>
+    <view class='cinema-name'>{{cinemaData.nm}}</view>
+    <view class='cinema-position'>{{cinemaData.addr}}</view>
+  </view>
+</view> 

@@ -1,0 +1,26 @@
+<import src='../../../templates/nothing/nothing.wxml' />
+<view class='container order-list-page'>
+  <view wx:for='{{orderList}}' wx:key='{{item}}' class='order-item'>
+    <navigator class='order-title line-ellipsis' url='../cinema-detail/cinema-detail?cinemaId={{item.cinemaId}}' hover-class='none'>
+      <view>{{item.cinemaName}}</view>
+      <view class='triangle'></view>
+    </navigator>
+     <view class='order-info'data-order='{{item}}'>
+      <image src='{{item.movieImg}}'></image>
+      <view class='order-desc'>
+        <view class='delete-box' catchtap='deleteOrder' data-index='{{index}}'>
+          <view class='iconfont icon-del delete'></view>
+        </view>
+        <view class='snack-name line-ellipsis'>{{item.movieName}}</view>
+        <view class='amount line-ellipsis'>数量：{{item.seats}}</view>
+      </view>
+    </view>
+    <view class='order-more'>
+      <view>总价：{{item.orderPrice}}元</view>
+      <view class='status'>已完成</view>
+    </view>
+  </view>
+  <view hidden='{{orderList.length}}'>
+    <template is='nothing' data='{{message:"暂无小吃订单"}}' />
+  </view>
+</view>

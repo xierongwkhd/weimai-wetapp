@@ -1,0 +1,12 @@
+<template name="cinemaMap">
+  <view class='cinema-info'>
+    <view class='info-box'>
+      <view class='title line-ellipsis'>{{cinemaData.nm}}</view>
+      <view class='location'>{{cinemaData.addr}}</view>
+    </view>
+    <navigator url='/pages/subPages/cinema-map/cinema-map?latitude={{cinemaData.latitude}}&longitude={{cinemaData.longitude}}&nm={{cinemaData.nm}}&addr={{cinemaData.addr}}' class='location-icon' hover-class='none'>
+      <image src='/image/user/location.png' mode='aspectFit'></image>
+      <view>地图</view>
+    </navigator>
+  </view>
+</template>

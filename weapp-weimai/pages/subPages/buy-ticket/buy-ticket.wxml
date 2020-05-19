@@ -1,0 +1,39 @@
+<view class='container' wx:if='{{order}}'>
+  <view class='section'>
+    <view class='movie-box'>
+      <view class='movie-name'>{{order.movieName}}</view>
+      <view class='watch-time'>{{order.time}}</view>
+      <view>{{order.cinemaName}} {{order.hall}} 号厅</view>
+      <view>
+        <block wx:for="{{order.seat}}">{{item.seatInfo}} </block>
+      </view>
+    </view>
+    <view class='price-box'>
+      <view>票价</view>
+      <view class='server'>含服务费3元/张
+        <text class='price-num'>{{order.price}}<text class='yuan'>元</text></text>
+      </view>
+    </view>
+  </view>
+  <view class='section'>
+    <view class='section-title'>活动和优惠券</view>
+    <view class='section-content'>无可用</view>
+  </view>
+  <view class='section'>
+    <view class='section-title'>退改签须知</view>
+    <view class='section-content'>
+      <view>开场时间60分钟前，可免费改签、退款</view>
+      <view>使用观影卡或享受票减小吃特惠时，不可改签</view>
+    </view>
+  </view>
+  <view class='section'>
+    <view class='section-title'>手机号</view>
+    <view class='section-content'>手机号仅用于生成订单，取票码不再以短信发送</view>
+  </view>
+  <view class='footer'>
+    <view class='payment'>还需支付：
+      <text class='price-num'>{{order.price}}<text class='yuan'>元</text></text>
+    </view>
+    <view class='payment-btn' bindtap='payment'>确认支付</view>
+  </view>
+</view>

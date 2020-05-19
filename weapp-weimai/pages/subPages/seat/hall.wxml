@@ -1,0 +1,48 @@
+<!--pages/hall/hall.wxml-->
+<view class='container'>
+  <view class='titleContainer'>
+    <text class='titleMovie'>{{movie.nm}}</text>
+    <text class='titleText'>{{info.startTime}}</text>
+    <view class='iconArrange'>
+      <view class='seatIcon'>
+        <image src='../../../image/icon/seatPre.png'></image>
+        <text>可选</text>
+      </view>
+      <view class='seatIcon'>
+        <image src='../../../image/icon/seatDone.png'></image>
+        <text>已售</text>
+      </view>
+    </view>
+  </view>
+  <movable-area class="movable-area" scale-area="true">
+    <view class='hallTitle'>
+      <text>{{info.hallId}}号厅 银幕</text>
+    </view>
+    <movable-view id='movable-view' class="movable-view" direction="all" bindchange="onChange" bindscale="onScale" scale="true" scale-min="0.5" scale-max="2" scale-value="1" inertia="true">
+      <view class='downContainer' id='seatView'>
+        <view class='seatView'>
+          <view class='x' wx:for="{{seat}}" wx:for-index="idx">
+            <view class='y' wx:for="{{item}}" wx:for-index="idy">
+              <image class="img" bind:tap='selectSeat' src='{{item.iconSrc}}' data-index='{{idx}}' data-ix='{{idy}}'>
+              </image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </movable-view>
+    <!-- 行号显示 -->
+    <view class='line' style='top: {{lineTop}}px'>
+      <text class='text' style="height:{{lineHeight}}px; " wx:for="{{lineArray}}">{{item}}</text>
+    </view>
+  </movable-area>
+  <!-- 已选座座位显示 -->
+  <view class='ticketCount'>
+    <button wx:for="{{selectSeatList}}" data-index='{{item.index}}' data-x='{{item.xCoord}}' bind:tap='cancelSeat' data-y='{{item.yCoord}}'>
+      <view>{{item.seatInfo}}</view>
+      <image class='btnImg' src='../../../image/icon/xxx.png'></image>
+    </button>
+  </view>
+  <view class='submit' bind:tap="submit">
+    <text>{{totalMoney}}<text wx:if="{{totalMoney>0}}">￥ </text>确认选座</text>
+  </view>
+</view>

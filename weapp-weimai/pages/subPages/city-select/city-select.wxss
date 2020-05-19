@@ -1,0 +1,117 @@
+.container {
+  background-color: #ebebeb;
+  color: #333;
+  font-size: 28rpx;
+}
+
+/* 搜索区样式 */
+
+.search-city {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: #f5f5f5;
+  padding: 22rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.search-input {
+  height: 2em;
+  background: #fff;
+  padding-left: 60rpx;
+  color: #999;
+}
+
+
+
+.icon-sousuo {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50rpx;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+/* 搜索结果区样式 */
+
+.result-box {
+  min-height: calc(100vh - 100rpx);
+  margin-top: 100rpx;
+  background: #f5f5f5;
+  
+}
+.result-item{
+  height: 88rpx;
+  line-height: 88rpx;
+  margin-left: 30rpx;
+  border-bottom: 1px solid #c8c7cc;
+}
+
+/* 城市列表样式 */
+.citylist-content{
+  margin-top: 100rpx;
+}
+
+.section-title {
+  padding-left: 30rpx;
+  line-height: 60rpx;
+}
+
+.section-body {
+  background-color: #f5f5f5;
+  padding-right: 60rpx;
+}
+
+.section-body .section-item {
+  height: 88rpx;
+  line-height: 88rpx;
+  margin-left: 30rpx;
+  border-bottom: 1px solid #c8c7cc;
+}
+
+.section-body .section-item:last-child {
+  border: none;
+}
+
+.section-body-inline {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
+  padding-bottom: 30rpx;
+  padding-left: 30rpx;
+}
+
+.section-body-inline .section-item {
+  min-width: 26%;
+  background: #fff;
+  margin-top: 30rpx;
+  margin-right: 4%;
+  border-radius: 6rpx;
+  line-height: 66rpx;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 30rpx;
+}
+
+/* 城市侧边栏导航样式 */
+
+.citylist-nav {
+  position: fixed;
+  top: 13vh;
+  /* top:200rpx; */
+  right: 0;
+  width: 30px;
+  text-align: center;
+}
+
+.citylist-nav>view {
+  font-size: 24rpx;
+  line-height: 1.5;
+}
