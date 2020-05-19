@@ -1,5 +1,0 @@
-<view>
-  <scroll-view class='timeline scroll-view_H' scroll-x>
-    <view class='day {{item.day===selectDay?"active":""}}' wx:for='{{days}}' wx:key='{{item}}' bindtap='selectDay' data-day='{{item.day}}'>{{item.title}}</view>
-  </scroll-view>
-</view>

@@ -1,8 +1,0 @@
-.flex {
-  display: flex;
-}
-
-/*l_auto:占用剩下的*/
-.flex_auto {
-  flex: 1;
-}

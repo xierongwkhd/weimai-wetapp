@@ -1,4 +1,0 @@
-<import src="/components/filmList/filmList.wxml"/>
-<template is="filmList" data="{{films: films}}"/>
-<import src="/components/message/message.wxml"/>
-<template is="message" data="{{message: message}}"/>
