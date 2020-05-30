@@ -43,4 +43,8 @@ public interface Constant {
     //apikey
     public static final String REBOOT_KEY = "469f6180d21646f8b99bd96797c11ece";
 
+    //百度地图
+    public static final String BAIDU_MAP_TO = "http://api.map.baidu.com/geocoding/v3/";
+    public static final String BAIDU_MAP_AK = "qimDWkoOflbIZd01GrBOGwrfDNlwUj8S";
+
 }

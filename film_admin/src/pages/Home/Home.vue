@@ -7,7 +7,6 @@
           <span slot="title" style="font-size: 16px;font-weight: bolder">微麦电影</span>
         </div>
         <div class="right">
-          <!-- :src="server+adminInfo.avatar" -->
           <img
             :src="adminInfo.avatar"
             class="user-avatar"
@@ -67,6 +66,10 @@
               <el-menu-item index="/order_manage" @click="handleMenuItemClick('/order_manage')">
                 <i class="el-icon-s-ticket"></i>
                 <span slot="title">订单管理</span>
+              </el-menu-item>
+              <el-menu-item index="/admin_manage" @click="handleMenuItemClick('/admin_manage')">
+                <i class="el-icon-s-check"></i>
+                <span slot="title">管理员管理</span>
               </el-menu-item>
           </el-menu>
         </div>

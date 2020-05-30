@@ -24,7 +24,7 @@
         </javaTypeResolver>
         <!-- 指定javaBean生成的位置 -->
         <javaModelGenerator
-                targetPackage="com.moke.wp.wx_weipiao.entity"
+                targetPackage="com.moke.wp.wx_weimai.entity"
                 targetProject="E:\idea-workspace\weipiao\src\main\java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
@@ -32,14 +32,14 @@
 
         <!-- 指定sql映射文件生成的位置 -->
 <!--        <sqlMapGenerator-->
-<!--                targetPackage="com.moke.wp.wx_weipiao.sql"-->
+<!--                targetPackage="com.moke.wp.wx_weimai.sql"-->
 <!--                targetProject="E:\idea-workspace\weipiao\src\main\java">-->
 <!--            <property name="enableSubPackages" value="true" />-->
 <!--        </sqlMapGenerator>-->
 
 <!--        &lt;!&ndash; 指定dao接口生成的位置，mapper接口 &ndash;&gt;-->
 <!--        <javaClientGenerator type="XMLMAPPER"-->
-<!--                             targetPackage="com.moke.wp.wx_weipiao.sql"-->
+<!--                             targetPackage="com.moke.wp.wx_weimai.sql"-->
 <!--                             targetProject="E:\idea-workspace\weipiao\src\main\java">-->
 <!--            <property name="enableSubPackages" value="true" />-->
 <!--        </javaClientGenerator>-->

@@ -94,7 +94,7 @@
             </el-form-item>
             <el-form-item label="所属品牌" prop="brandId">
               <el-col :span="18">
-                <el-select v-if="cinemaInfo.brandId" v-model="cinemaInfo.brandId" filterable placeholder="请选择" style="width: 100%" @blur="selectBlur">
+                <el-select v-if="cinemaInfo.id" v-model="cinemaInfo.brandId" filterable placeholder="请选择" style="width: 100%" @blur="selectBlur">
                   <el-option v-for="(item,index) in brandList" :key="index" :label="item.brand" :value="item.id"></el-option>
                 </el-select>
                 <el-select v-else v-model="addBrandId" filterable placeholder="请选择" style="width: 100%" @blur="selectBlur">
@@ -246,7 +246,8 @@
             if (!this.cinemaInfo.nm||!this.cinemaInfo.addr) {
               Message.error('请完成必填内容！');
             } else{
-              if(this.newBrand.length>0){
+              var reg = new RegExp("[\\u4E00-\\u9FFF]+","g");
+              if(reg.test(this.newBrand)){
                 let json = await addCinemaBrand(this.newBrand);
                 if (json.state===200){
                   this.cinemaInfo.brandId = json.data;
@@ -268,6 +269,9 @@
                     Message.error(json.message);
                   }
                 } else{
+                  if(!this.cinemaInfo.brandId){
+                    this.cinemaInfo.brandId = this.addBrandId;
+                  }
                   let json = await updateCinemaInfo(this.cinemaInfo);
                   if (json.state===200){
                     this.loadCurrentPageCinema(this.currentPage,8,this.searchInput);

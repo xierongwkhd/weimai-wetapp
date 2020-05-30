@@ -80,6 +80,13 @@ export const updateBannerInfo = (banner)=>ajax('/admin/banner/addBanner',{banner
 //删除广告
 export const deleteBannerInfo = (bannerId)=>ajax('/admin/banner/deleteBanner',{bannerId},'POST')
 
+//获取当前页管理员
+export const getCurrentPageAdmin = (pageNum,limit,keyword)=>ajax('/admin/auser/getAdmins',{pageNum,limit,keyword});
+//获取Options
+export const getOptions3 = ()=>ajax('/admin/auser/getOptions',{});
+//修改管理员信息
+export const updateAdminInfo = (userId,name,username,password,roleId,cineamId)=>ajax('/admin/auser/updateInfo',{userId,name,username,password,roleId,cineamId},'POST');
+
 //商家=====================================================================================================================
 //获取当前页影厅
 export const getCurrentPageBHall = (pageNum,limit,keyword,cinemaId)=>ajax('/admin/hall/getHalls',{pageNum,limit,keyword,cinemaId});

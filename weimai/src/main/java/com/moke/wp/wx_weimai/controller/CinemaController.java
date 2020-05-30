@@ -85,7 +85,7 @@ public class CinemaController {
     @PostMapping("/getFilters")
     public Result getfilters(@RequestBody SelectCity selectCity) {
         CinemaFilter cinemaFilter = cinemaService.getfilters(selectCity);
-        return new Result(JSONObject.toJSON(cinemaFilter));
+        return new Result(cinemaFilter);
     }
 
 }

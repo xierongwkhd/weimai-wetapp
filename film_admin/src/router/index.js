@@ -12,6 +12,7 @@ import CommentManage from '../pages/Home/children/CommentManage'
 import OrderManage from '../pages/Home/children/OrderManage'
 import SnackManage from '../pages/Home/children/SnackManage'
 import BannerManage from '../pages/Home/children/BannerManage'
+import AdminManage from '../pages/Home/children/AdminManage'
 
 import BOrderManage from '../pages/business/children/OrderManage'
 import BSnackManage from '../pages/business/children/SnackManage'
@@ -41,8 +42,9 @@ export default new Router({
         {path:'comment_manage',component:CommentManage},
         {path:'order_manage',component:OrderManage},
         {path:'snack_manage',component:SnackManage},
-        {path:'/home',redirect: '/home/user_manage'},
-        {path:'banner_manage',component:BannerManage}
+        {path:'banner_manage',component:BannerManage},
+        {path:'admin_manage',component:AdminManage},
+        {path:'/home',redirect: '/home/user_manage'}
       ]
     },
     {
