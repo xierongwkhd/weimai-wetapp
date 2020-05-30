@@ -6,15 +6,21 @@
 - **weapp-weimai**：小程序页面
 - **film_admin**：管理后台Web页面
 - **weimai**：整个项目的后端
+- **images**：演示图片
 
 ## 相关技术
-- **前端**：Vue、ElementUI...
-- **后端**：SpringBoot、MyBatis、Druid、MySQL、Shiro、Elasticsearch、Redis...
+- **前端**：Vue、ElementUI
+- **后端**：SpringBoot、MyBatis、Druid、MySQL、Shiro、Elasticsearch、Redis
 
 ## 效果展示
 ![首页](https://github.com/xierongwkhd/weimai-wetapp/blob/master/images/%E9%A6%96%E9%A1%B5.gif?raw=true)
 ![影院](https://github.com/xierongwkhd/weimai-wetapp/blob/master/images/%E5%BD%B1%E9%99%A2.gif?raw=true)
 ![口碑](https://github.com/xierongwkhd/weimai-wetapp/blob/master/images/%E5%8F%A3%E7%A2%91.gif?raw=true)
+<br/>
+<br/>
+![我的](https://github.com/xierongwkhd/weimai-wetapp/blob/master/images/%E6%88%91%E7%9A%84.gif?raw=true)
+![搜索](https://github.com/xierongwkhd/weimai-wetapp/blob/master/images/%E6%90%9C%E7%B4%A2.gif?raw=true)
+![购票](https://github.com/xierongwkhd/weimai-wetapp/blob/master/images/%E8%B4%AD%E7%A5%A8.gif?raw=true)
 
 
 ## github地址
