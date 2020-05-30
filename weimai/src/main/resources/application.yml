@@ -2,14 +2,14 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://47.93.239.46:3306/weipiao?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/weipiao?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   redis:
-    host: 47.93.239.46
+    host: localhost
     port: 6379
     timeout: 60s
-    password: a4460842622
+    password: 123456
     database: 1
     lettuce:
       pool:
@@ -28,7 +28,7 @@ spring:
   data:
     elasticsearch:
       cluster-name: docker-cluster
-      cluster-nodes: 119.3.223.200:9300
+      cluster-nodes: localhost:9300
 file:
   upload-dir: ./upFile
 mybatis:
