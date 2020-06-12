@@ -7,6 +7,7 @@
 - **film_admin**：管理后台Web页面
 - **weimai**：整个项目的后端
 - **images**：演示图片
+- **sql**：数据库文件
 
 ## 相关技术
 - **前端**：Vue、ElementUI
